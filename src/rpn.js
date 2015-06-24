@@ -6,5 +6,24 @@
  * @returns {number}
  */
 export function rpn(input) {
-    return 0;
+    var split = input.split(" ");
+    var stack = [];
+
+    for(var i = 0; i < split.length ; i++) {
+        var currentChar = split[i];
+
+        if(isNaN(currentChar)) {
+            stack.push(evaluateStack(currentChar, stack));
+        } else {
+            stack.push(currentChar);
+        }
+    }
+
+    return stack.pop();
+}
+
+function evaluateStack(operator, stack) {
+    var two = stack.pop();
+    var one = stack.pop();
+    return eval(one + operator + two);
 }
