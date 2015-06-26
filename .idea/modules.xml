@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../code-dojo-reverse-polish-notation/code-dojo-reverse-polish-notation.iml" filepath="$PROJECT_DIR$/../code-dojo-reverse-polish-notation/code-dojo-reverse-polish-notation.iml" />
       <module fileurl="file://$PROJECT_DIR$/code-dojo-reverse-polish-notation.iml" filepath="$PROJECT_DIR$/code-dojo-reverse-polish-notation.iml" />
     </modules>
   </component>
